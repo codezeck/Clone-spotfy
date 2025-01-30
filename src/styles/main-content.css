@@ -78,10 +78,6 @@
   outline: none;
 }
 
-#search-input{
-  text-align: center;
-}
-
 .header__login .subscribe {
   color: #a7a7a7;
   font-size: 16px;
@@ -268,7 +264,7 @@
   padding: 16px;
   position: relative;
   transition: background-color 0.3s ease;
-  width: 100%;
+  width: 75%;
 }
 
 .artist-card:hover {
@@ -328,7 +324,7 @@
 .play .fa-play {
   position: absolute;
   right: 10px;
-  top: 120px;
+  top: 115px;
   padding: 18px;
   background-color: #1db954;
   border-radius: 100%;
@@ -339,7 +335,7 @@
 
 .artist-card:hover .play .fa-play {
   opacity: 1;
-  transform: translateY(-20px);
+  transform: translateY(-18px);
 }
 
 .play .fa-play:hover {
