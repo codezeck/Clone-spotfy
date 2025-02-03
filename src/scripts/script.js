@@ -3,6 +3,7 @@ const resultArtist = document.getElementById("result-artist");
 const resultPlaylist = document.getElementById('result-playlist');
 const buttonBack = document.querySelector('.arrow-left');
 const buttonNext = document.querySelector('.arrow-right');
+let placeholder = document.getElementById('search-input');
 
 const lastArtists = [];
 let currentIndex = -1;
@@ -67,12 +68,12 @@ function voltar() {
 
         resultArtist.classList.remove('hidden');
         resultPlaylist.classList.add('hidden');
-        searchInput.value = '';
+        placeholder.value = '';
     } else {
         console.log('Não há mais itens para voltar.');
         resultArtist.classList.add('hidden');
         resultPlaylist.classList.remove('hidden');
-        searchInput.value = '';
+        placeholder.value = '';
     }
 }
 
@@ -91,10 +92,10 @@ function avancar() {
 
         resultArtist.classList.remove('hidden');
         resultPlaylist.classList.add('hidden');
-        searchInput.value = '';
+        placeholder.value = '';
     } else {
         console.log('Não há mais itens para avançar.');
-        searchInput.value = '';
+        placeholder.value = '';
     }
 }
 
