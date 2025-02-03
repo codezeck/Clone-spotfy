@@ -159,6 +159,7 @@ body{
     margin-top: 12px;
     border:0;
     width: 113px;
+    transition: 0.3s;
 }
 
 .section-podcast{
@@ -198,6 +199,7 @@ body{
     margin-top: 25px;
     border:0;
     width: 145px;
+    transition: 0.3s;
 }
 
 .sidebar .cookies{
@@ -270,6 +272,7 @@ body{
 }
 
 .disclaimer-premium button {
+    display: flex;
     background-color: #ffffff;
     color: #000000;
     font-size: 16px;
@@ -279,4 +282,16 @@ body{
     border-radius: 40px;
     cursor: pointer;
     flex-shrink: 0;
+}
+
+.disclaimer-premium .anim{
+    transition: 0.3s;
+}
+
+.animation:hover{
+    transform: scale(1.10);
+}
+
+.anim:hover{
+    transform: scale(1.05);
 }
